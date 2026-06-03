@@ -1,0 +1,21 @@
+[project]
+name = "research-multi-agent-system"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "arxiv>=4.0.0",
+    "chromadb>=1.5.9",
+    "instructor>=1.15.1",
+    "langchain-community>=0.4.2",
+    "langchain-groq>=1.1.2",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.2",
+    "langsmith>=0.8.8",
+    "openai>=2.40.0",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "sqlalchemy>=2.0.50",
+    "tavily-python>=0.7.25",
+]
