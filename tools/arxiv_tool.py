@@ -1,10 +1,16 @@
 import arxiv
 from schemas import PaperSummary
 from langsmith import traceable
+import time
 
 @traceable(name="search_arxiv")
 def search_arxiv(query: str, max_results: int = 5) -> list[dict]:
-    client = arxiv.Client()
+    time.sleep(3)
+    client = arxiv.Client(
+        page_size=max_results,
+        delay_seconds=3,
+        num_retries=2
+    )
     search = arxiv.Search(
         query=query,
         max_results=max_results,
